@@ -4,3 +4,4 @@ DP.py și rezolutie.py sunt codurile python pentru metodele de rezolvare corespu
 DPLL.cpp si DPLL+CDCL.cpp - codurile pentru metodele de rezolvare corespunzatoare numelor in C++
 synthetic.rar fisierele pe care au fost verificate metodele
 Code_Lucrare contine codul Latex pentru lucrare
+gen_3sat.py este codul care genereaza formule de tip 3SAT aleatorii
