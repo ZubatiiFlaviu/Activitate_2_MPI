@@ -3,3 +3,4 @@ Acest depozit conține codul sursă, seturile de date și scripturile utilizate 
 DP.py și rezolutie.py sunt codurile python pentru metodele de rezolvare corespunzatoare numelor
 DPLL.cpp si DPLL+CDCL.cpp - codurile pentru metodele de rezolvare corespunzatoare numelor in C++
 synthetic.rar fisierele pe care au fost verificate metodele
+Code_Lucrare contine codul Latex pentru lucrare
