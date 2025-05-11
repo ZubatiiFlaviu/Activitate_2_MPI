@@ -63,7 +63,6 @@ bool dpll(Formula formula, vector<int>& solutie) {
     return false;
 }
 
-// Citește o instanță DIMACS CNF și returnează formula și numărul de variabile
 Formula read_dimacs(const string& filename, int& out_num_vars) {
     Formula formula;
     ifstream in(filename);
@@ -89,7 +88,6 @@ Formula read_dimacs(const string& filename, int& out_num_vars) {
     return formula;
 }
 
-// Listează toate fișierele .cnf dintr-un director
 vector<string> list_cnf_files(const string& dir) {
     vector<string> files;
     for (auto& entry : fs::directory_iterator(dir)) {
