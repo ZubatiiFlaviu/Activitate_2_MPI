@@ -37,13 +37,10 @@ def read_dimacs(path):
     with open(path) as f:
         for line in f:
             line = line.strip()
-            # skip comments and delimiters
             if not line or line.startswith('c') or line.startswith('%'):
                 continue
-            # skip problem line
             if line.startswith('p'):
                 continue
-            # parse clause literals ignoring terminal 0
             parts = line.split()
             lits = []
             for x in parts:
@@ -52,7 +49,6 @@ def read_dimacs(path):
                 try:
                     lits.append(int(x))
                 except ValueError:
-                    # ignore any non-integer tokens
                     continue
             if lits:
                 formula.append(lits)
@@ -79,7 +75,6 @@ def rezolutie_cu_timeout(clauze, timeout_ms):
 
 
 def main(cnf_dir):
-    # Determine files to process
     if os.path.isfile(cnf_dir) and cnf_dir.endswith('.cnf'):
         files = [cnf_dir]
     else:
